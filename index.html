@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+    <title>API Creator</title>
+</head>
+<body>
+    <main>
+        <section class="get box">
+            <input type="text" placeholder="Root name" id="getRootName">
+            <input type="text" placeholder="Specific" id="getSpecific">
+            <input type="text" placeholder="Table name" id="getTableName">
+            <div class="output">
+                <label for="getOutput">GET Output</label>
+                <textarea name="output" id="getOutput" disabled></textarea>
+            </div>
+        </section>
+
+        <section class="post box">
+            <input type="text" placeholder="Root name" id="postRootName">
+            <input type="text" placeholder="Specific" id="postSpecific">
+            <input type="text" placeholder="Table name" id="postTableName">
+            <div class="output">
+                <label for="postOutput">POST Output</label>
+                <textarea name="output" id="postOutput" disabled></textarea>
+            </div>
+        </section>
+
+        <section class="db box">
+            <h2>Database Connection</h2>
+            <input type="text" placeholder="Database name" id="dbName">
+            <input type="text" placeholder="Host name" id="dbHost">
+            <input type="text" placeholder="Password" id="dbPassword">
+            <input type="text" placeholder="Username" id="dbUsername">
+            <div class="output">
+                <label for="dbConnectionOutput">Connection</label>
+                <textarea name="output" id="dbConnectionOutput" disabled></textarea>
+            </div>
+            <div class="output">
+                <label for="dbQueryOutput">Run Query</label>
+                <textarea name="output" id="dbQueryOutput" disabled></textarea>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
