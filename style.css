@@ -5,14 +5,13 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    color: black;
+    color: white;
 }
 
 body {
     background: linear-gradient(45deg, #000, #333);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,7 +39,7 @@ main {
     gap: 15px;
 }
 
-input {
+input, button, textarea {
     border: none;
     padding: 10px;
     border-radius: 5px;
@@ -50,12 +49,22 @@ input {
     transition: background 0.3s;
 }
 
-input::placeholder {
+input::placeholder, textarea::placeholder {
     color: rgba(255, 255, 255, 0.7);
 }
 
-input:focus {
+input:focus, textarea:focus, button:hover {
     background: rgba(255, 255, 255, 0.3);
+}
+
+button {
+    cursor: pointer;
+    background: rgba(0, 123, 255, 0.7);
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: rgba(0, 123, 255, 0.9);
 }
 
 .output {
@@ -70,17 +79,8 @@ label {
 }
 
 textarea {
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-    background: rgba(255, 255, 255, 0.2);
-    color: white;
-    resize: none;
     height: 100px;
-}
-
-textarea:disabled {
-    background: rgba(255, 255, 255, 0.1);
+    resize: none;
 }
 
 @media (max-width: 600px) {

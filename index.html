@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="app.js"></script>
     <title>API Creator</title>
 </head>
 <body>
@@ -13,6 +12,8 @@
             <input type="text" placeholder="Root name" id="getRootName">
             <input type="text" placeholder="Specific" id="getSpecific">
             <input type="text" placeholder="Table name" id="getTableName">
+
+            <button>Get code</button>
             <div class="output">
                 <label for="getOutput">GET Output</label>
                 <textarea name="output" id="getOutput" disabled></textarea>
@@ -23,6 +24,8 @@
             <input type="text" placeholder="Root name" id="postRootName">
             <input type="text" placeholder="Specific" id="postSpecific">
             <input type="text" placeholder="Table name" id="postTableName">
+
+            <button>Post code</button>
             <div class="output">
                 <label for="postOutput">POST Output</label>
                 <textarea name="output" id="postOutput" disabled></textarea>
@@ -35,6 +38,8 @@
             <input type="text" placeholder="Host name" id="dbHost">
             <input type="text" placeholder="Password" id="dbPassword">
             <input type="text" placeholder="Username" id="dbUsername">
+
+            <button onclick="generateDbConnectionOutput()">Generate Connection Code</button>
             <div class="output">
                 <label for="dbConnectionOutput">Connection</label>
                 <textarea name="output" id="dbConnectionOutput" disabled></textarea>
@@ -45,5 +50,6 @@
             </div>
         </section>
     </main>
+    <script src="app.js"></script>
 </body>
 </html>
